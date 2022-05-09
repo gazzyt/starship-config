@@ -9,10 +9,11 @@ $git_status\
 [](fg:#FCA17D bg:#86BBD8)\
 $nodejs\
 $rust\
+$dotnet\
 [](fg:#86BBD8 bg:#33658A)\
 $time\
 [ ](fg:#33658A)\
-"""
+\n$character"""
 
 # Disable the blank line at the start of the prompt
 # add_newline = false
@@ -61,6 +62,10 @@ format = '[[ $symbol ($version) ](bg:#86BBD8)]($style)'
 symbol = ""
 style = "bg:#86BBD8"
 format = '[[ $symbol ($version) ](bg:#86BBD8)]($style)'
+
+[dotnet]
+style = "bg:#86BBD8"
+format = '[$symbol($version )(🎯 $tfm )]($style)'
 
 [time]
 disabled = false
